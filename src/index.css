@@ -1,0 +1,11 @@
+.btn btn-outline-dark {
+  height: 50 px;
+  width: 50 px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
