@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tic/static/css/main.34cb9da3.css",
+    "main.js": "/tic/static/js/main.edd3db64.js",
+    "index.html": "/tic/index.html",
+    "main.34cb9da3.css.map": "/tic/static/css/main.34cb9da3.css.map",
+    "main.edd3db64.js.map": "/tic/static/js/main.edd3db64.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34cb9da3.css",
+    "static/js/main.edd3db64.js"
+  ]
+}
