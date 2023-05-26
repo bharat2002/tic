@@ -12,7 +12,7 @@ root.render(
       style={{
         backgroundImage:
           "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbltSQsnjFEBMHsELY0kB7tF6MRIZC_KqdYWBZqjVRUw&s')",
-        minHeight: 1440
+        minHeight: 950
       }}
     >
       <Container
@@ -27,13 +27,11 @@ root.render(
         <Paper
           elevation={5}
           sx={{
-            marginLeft: 45,
-            width: 2 / 4,
-            textAlign: "center",
+            postion:"center",
             height: 1 / 2
           }}
         >
-          <Typography variant="h1" component="h1" sx={{ textAlign: "center" }}>
+          <Typography variant="h3" component="h1" sx={{ textAlign: "center" }}>
             <Paper elevation={2} sx={{ marginBottom: 1 }}>
               Tic Tac Toe
             </Paper>
