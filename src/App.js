@@ -8,8 +8,9 @@ function Square({ value, onSquareClick }) {
   return (
     <Button
       variant="contained"
-      className="btn btn-outline-dark"
       onClick={onSquareClick}
+      color="success"
+      style={{height:25, margin:3 }}
     >
       {value}
     </Button>
