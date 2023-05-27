@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import Media from "react-media"
 import Board from "./App";
 import Container from "@mui/material/Container";
 import { Typography, Paper } from "@mui/material";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -31,15 +33,33 @@ root.render(
             height: 1 / 2
           }}
         >
-          <Typography variant="h3" component="h1" sx={{ textAlign: "center" }}>
+          <Media query="(min-width :1000px )">
+            {(matches) =>{
+              return matches ? <> <Typography variant= "h2" className="MainHeading" sx={{  textAlign: "center" }}>
+              <Paper elevation={2} sx={{ marginBottom: 1 }}>
+                Tic Tac Toe
+              </Paper>
+              <Typography variant="h4" sx={{ textAlign: "center", paddingY: 2 }}>
+            "A classic two player game"
+          </Typography>
+            </Typography>
+            </>
+            :<> 
+            <Typography variant= "body2" className="MainHeading" sx={{ textAlign: "center" }}>
             <Paper elevation={2} sx={{ marginBottom: 1 }}>
               Tic Tac Toe
             </Paper>
           </Typography>
-
-          <Typography variant="h4" sx={{ textAlign: "center", paddingY: 2 }}>
+          <Typography variant="body" sx={{ textAlign: "center", paddingY: 2 }}>
             "A classic two player game"
           </Typography>
+          </>
+            }
+            }
+          </Media>
+          
+
+          
         </Paper>
       </Container>
 
