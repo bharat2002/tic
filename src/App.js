@@ -120,7 +120,7 @@ export default function Game() {
     }
     return (
       <li key={move}>
-        <button onClick={() => jumpTo(move)}>{description}</button>
+        <Button className ="StatusButton" variant ="contained" sx={{backgroundColor:"#202020" ,'&:hover': {backgroundColor: "#101010"}}} onClick={() => jumpTo(move)}>{description}</Button>
       </li>
     );
   });
