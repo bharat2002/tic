@@ -33,7 +33,7 @@ root.render(
             height: 1 / 2
           }}
         >
-          <Media query="(min-width :1000px )">
+          <Media query="(min-width :1200px )">
             {(matches) =>{
               return matches ? <> <Typography variant= "h2" className="MainHeading" sx={{  textAlign: "center" }}>
               <Paper elevation={2} sx={{ marginBottom: 1 }}>
